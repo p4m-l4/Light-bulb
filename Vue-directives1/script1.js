@@ -12,7 +12,7 @@ const { createApp } = Vue;
 createApp({
 	data() {
 		return {
-			switch: "off",
+			off: true,
 
 		};
 	},
