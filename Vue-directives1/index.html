@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../../styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+		<link rel="stylesheet" href="../styles1/styles.css" />
+		<title>Light Bulb</title>
+	</head>
+	<body>
+		<div id="app">
+			<div v-if="off" class="container">
+                <img
+					src="../styles1/images/img2.jpeg"
+					class="image"
+				/>
+            </div>
+
+            <div v-else="off!=off" class="container">
+                    <img  src="../styles1/images/img3.webp" class="image" />
+            </div>
+
+                <button @click ='off != off' >Switch</button>
+				
+			</div>
+		</div>
+
+		<script src="vue.js"></script>
+		<script src="./script1.js"></script>
+	</body>
+</html>
+
+<!-- <div class="container">
+
+    v-else-if="switch == 'on'" 
+    v-on:click="switch" v-else 
+        
+        <img v-else-if="switch == 'on'" src="../styles1/images/img2.jpeg" class="image"><br/><br/>
+        <button class="btn btn-primary">Light Switch</button>
+            <img v-else class="image" src="../styles1/images/img3.webp"><br/><br/>
+        </div> -->
